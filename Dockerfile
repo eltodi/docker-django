@@ -14,7 +14,8 @@ RUN su django
 RUN cd /home/django
 RUN mkdir /home/django/.virtualenvs
 RUN chown -R django: /home/django/.virtualenvs/
-RUN echo "export WORKON_HOME=$HOME/.virtualenvs" >> /home/django/.bashrc
+
+RUN echo "export WORKON_HOME=/home/django/.virtualenvs" >> /home/django/.bashrc
 RUN echo "source /usr/share/virtualenvwrapper/virtualenvwrapper.sh" >> /home/django/.bashrc
 RUN echo "alias pmr='python manage.py runserver 0.0.0.0:8000'" >> /home/django/.bashrc
 RUN echo "alias pms='python manage.py shell'" >> /home/django/.bashrc
