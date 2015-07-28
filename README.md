@@ -10,7 +10,9 @@
 
 ### Por defecto crea un usuario llamado 'django' en cuyo home debe crearse el proyecto
 
-### Para construir la imagen se debe utiliazar: ``docker build -t elias-django .`` 
+### Para construir la imagen se debe utiliazar: 
+``docker build -t docker-django .`` 
 
-### Para lanzar un contenedor puede ejecutar: ``docker run -P -i -t elias-django /bin/bash``
+### Para lanzar un contenedor puede ejecutar: 
+``docker run -P -i -t docker-django /bin/bash``
 
