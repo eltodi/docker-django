@@ -3,7 +3,7 @@ MAINTAINER Elias Torres <eltodi@gmail.com>
 
 RUN apt-get update
 RUN apt-get -y upgrade
-RUN apt-get -y install vim sudo python-setuptools virtualenvwrapper python-pip python-dev libjpeg-dev
+RUN apt-get -y install vim sudo python-setuptools virtualenvwrapper python-pip python-dev libjpeg-dev libxml2-dev libxslt-dev python-dev
 RUN pip install --upgrade pip
 RUN apt-get -y install supervisor redis-server git unzip openssh-server openssl libmysqlclient-dev
 RUN ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib
