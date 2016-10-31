@@ -16,3 +16,4 @@
 ### Para lanzar un contenedor puede ejecutar: 
 ``docker run -P -i -t docker-django /bin/bash``
 
+### Movido a github
